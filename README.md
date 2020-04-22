@@ -15,7 +15,6 @@
 |------|----|-------|
 |group_name|integer|null: false, unique: true|
 ### Association
-- has_many :users_id
 - has_many :groups, through: :groups_users
 - has_many :groups_users
 - has_many :massages
