@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -14,6 +15,8 @@
 ### Assciation
 - has_many :user_id
 
+=======
+>>>>>>> Stashed changes
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
