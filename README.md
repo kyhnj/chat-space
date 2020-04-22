@@ -3,9 +3,9 @@
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### Association
-- has_many :message
+- has_many :messages
 - has_many :groups, through: :groups_users
 - has_many :groups_users
 
@@ -14,9 +14,9 @@
 |------|----|-------|
 |user_id|integer|null: false, forngin_key: true|
 ### Association
-- has_many :user_id
+- has_many :users_id
 - has_many :group, through: :groups_users
-- has_many :group_users
+- has_many :groups_users
 
 ## groups_usersテーブル
 |Column|Type|Options|
@@ -30,8 +30,8 @@
 ## messageテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
+|body|text|
+|image|string|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foregin_key: ture|
 ### Association
