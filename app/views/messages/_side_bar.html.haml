@@ -1,0 +1,18 @@
+.chat-side
+  .side-header
+    .side-header_box
+      %p.side-header_box_username
+        Hiakru
+      %ul.side-header_box_menu
+        %li.side-header_box_menu_new-group
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.side-header_box_edit-user
+          = link_to "#" do
+            = icon('fas', 'cog')
+  .groups
+    = link_to "#", class:"group" do
+      %p.group_group-name
+        test    
+      %p.group_letest-message
+        までメッセージがありません
