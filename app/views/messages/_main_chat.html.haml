@@ -6,7 +6,8 @@
       %ul.main-header_left-box_member-list
         Member:
         %li.main-header_left-box_member-lisr_member
-          = current_user.name   
+        - @group.users.each do |user|
+          = user.name
     =link_to edit_group_path(@group), class:"main-header_edit-btn" do
       Edit
   
